@@ -101,7 +101,6 @@
     }
 
     .cert-item:hover {
-        transform: scale(1.03) rotate(1deg);
         box-shadow: 12px 12px 0px rgba(0,0,0,0.1);
     }
 
@@ -384,7 +383,8 @@
 
     /* Hover effect: Tilt and lift without background color change */
     .seminar-card:hover {
-        transform: translateY(-5px) rotate(1.5deg);
+                transform: translateY(-5px);
+
         box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
     }
 
@@ -427,18 +427,9 @@
     }
     /* --- COMBINED RESPONSIVE LOGIC (Optimized for 600x608) --- */
 
-    /* Tablet/Medium Screens */
-    @media (max-width: 900px) {
-        .seminar-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .container {
-            padding: 30px 20px;
-        }
-    }
 
     /* Small Screens & Square Viewports (600x608) */
-    @media (max-width: 650px) {
+    @media (max-width: 800px) {
         /* Header adjustments for short viewports */
         header {
             margin-bottom: 40px;
